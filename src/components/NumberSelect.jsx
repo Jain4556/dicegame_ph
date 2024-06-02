@@ -43,38 +43,56 @@ const NumberSelectCont = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 97%;
+  margin: auto;
 
   .flex {
     display: flex;
     gap: 16px;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: nowrap;
     overflow-x: auto;
+    /* margin-top: 10px; */
   }
 
   .error {
     color: red;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-top: -12px;
+    text-align: center;
   }
 
   p {
+    margin: 2px;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
   }
+  .sel{
+    margin: -15px;
+  }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .flex {
+      margin: auto;
       height: 72px;
       width: 377px;
       gap: 5px;
+      /* margin-top: 10px; */
     }
     .sel {
-      padding-top: 0px;
+      padding-top: 10px;
       margin: auto;
+    }
+    .error {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .flex {
+      justify-content: center;
     }
   }
 `;

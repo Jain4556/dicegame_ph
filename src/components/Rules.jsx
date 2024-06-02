@@ -13,7 +13,9 @@ const Rules = () => {
             *after click on dice if selected number is equal to dice number you
             will get same point as on dice{" "}
           </p>
-          <p>*if you get wrong guess then 2 point will be deducted</p>
+          <p>*if you get wrong guess then <b>2</b>  point will be deducted</p>
+          <p>*If your Score become <b>25</b>  you will become the winner  </p>
+          <p>*If the Score goes down to  <b>-50</b> you will lose the game</p>
         </div>
       </div>
     </RulesCont>
@@ -24,29 +26,31 @@ export default Rules;
 
 const RulesCont = styled.div`
   border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: auto;
+  /* margin-top: 30px; */
+  
   background-color: #b8aaaa;
-  padding: 20px;
-  margin-left: 20px;
-  height: 250px;
+  padding: 25px;
+  margin: auto;
+  
+  max-width: 550px;
 
   h2 {
     font-size: 24px;
   }
   .container {
-    max-width: 500px; /* Adjust as needed */
-    margin: 0 auto;
+    /* Adjust as needed */
+    margin: auto;
   }
   .text {
-    margin-top: 24px;
+    margin-top: auto;
     /* Center the text */
   }
   @media screen and (max-width: 600px) {
     .container {
       margin: auto;
-      max-width: 70%;
-      margin: auto;
+      max-width: 80%;
+      height: auto;
     }
   }
 `;

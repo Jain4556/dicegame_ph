@@ -5,7 +5,7 @@ const StartGame = ({ toggle }) => {
   return (
     <Container>
       <ImageWrapper>
-        <img src="/images/dices.png" alt="Dice" />
+        <img  src="/images/dices.png" alt="Dice" />
       </ImageWrapper>
       <div className="content">
         <h1>DICE GAME</h1>
@@ -49,17 +49,15 @@ const Container = styled.div`
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-
   align-items: center;
   width: 80%;
 
   img {
-    width: 100vh;
-    max-width: 410px;
-    height: auto;
+    max-width: 500px;
 
-    @media (min-width: 600px) {
-      max-width: 250px;
+
+    @media (max-width: 600px) {
+      max-width: 400px;
     }
   }
 `;
